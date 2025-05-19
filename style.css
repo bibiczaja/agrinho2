@@ -7,40 +7,40 @@
 
 /* Corpo */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
     color: #333;
+    line-height: 1.6;
 }
 
 /* Cabeçalho */
 header {
-    background-color: #4CAF50;
+    background-color: #006400;
     color: white;
-    padding: 10px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 20px;
+    padding: 20px;
+    text-align: center;
 }
 
 header .logo h1 {
     font-size: 2.5rem;
+    margin-bottom: 10px;
 }
 
 header nav ul {
-    list-style-type: none;
+    list-style: none;
+    margin-top: 10px;
 }
 
 header nav ul li {
     display: inline;
-    margin-right: 20px;
+    margin-right: 30px;
 }
 
 header nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    font-size: 1.1rem;
 }
 
 /* Banner */
@@ -60,15 +60,11 @@ header nav ul li a {
     left: 50%;
     transform: translateX(-50%);
     color: white;
-}
-
-.banner-text h2 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-}
-
-.banner-text p {
-    font-size: 1.2rem;
+    font-size: 2rem;
+    max-width: 80%;
+    background-color: rgba(0, 100, 0, 0.7);
+    padding: 10px;
+    border-radius: 5px;
 }
 
 /* Seções */
@@ -78,19 +74,27 @@ section {
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-bottom: 20px;
     text-align: center;
+    color: #006400;
 }
 
-/* Sobre */
-.about img {
-    width: 100%;
-    max-width: 600px;
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-top: 20px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+}
+
+.content p {
+    font-size: 1.1rem;
+    width: 60%;
+}
+
+.content img {
+    width: 35%;
+    border-radius: 10px;
 }
 
 /* Programas */
@@ -98,38 +102,49 @@ h2 {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    margin-top: 30px;
 }
 
 .program {
     width: 30%;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .program img {
     width: 100%;
     max-width: 300px;
+    margin-bottom: 15px;
+    border-radius: 8px;
 }
 
 .program h3 {
-    font-size: 1.5rem;
-    margin-top: 10px;
+    font-size: 1.6rem;
+    color: #006400;
 }
 
 /* Notícias */
-.news article {
-    background-color: #fff;
-    padding: 20px;
-    margin: 10px 0;
+.news {
+    background-color: white;
+    padding: 40px 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.news-item {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 20px;
     border-radius: 5px;
 }
 
-.news article h3 {
+.news-item h3 {
+    color: #333;
     font-size: 1.8rem;
     margin-bottom: 10px;
 }
 
-.news article p {
+.news-item p {
     font-size: 1rem;
     color: #555;
 }
@@ -138,42 +153,18 @@ h2 {
 .contact form {
     display: flex;
     flex-direction: column;
-    max-width: 500px;
+    max-width: 600px;
     margin: 0 auto;
 }
 
 .contact form label {
-    margin-bottom: 5px;
     font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 1.1rem;
 }
 
 .contact form input,
 .contact form textarea {
-    padding: 10px;
+    padding: 15px;
     margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.contact form button {
-    padding: 10px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
-}
-
-/* Rodapé */
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-}
-
-footer .social-media a {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
+    border: 1px solid
